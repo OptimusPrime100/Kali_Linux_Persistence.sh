@@ -1,0 +1,5 @@
+fdisk -l
+mkdir -p /mnt/my_usb
+mount /dev/sdb2 /mnt/my_usb
+echo "/ union" > /mnt/my_usb/persistence.conf
+umount /dev/sdb2 && reboot
